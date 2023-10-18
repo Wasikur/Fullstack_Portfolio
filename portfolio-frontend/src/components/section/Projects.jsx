@@ -10,7 +10,7 @@ const Projects = () => {
   const getData = async () => {
     try {
       const response = await Axios.get(
-        "https://portfolio-backend-nodejs.vercel.app/"
+        "https://fullstack-portfolio-psi.vercel.app/"
       );
       console.log(response.data);
       setData(response.data);
