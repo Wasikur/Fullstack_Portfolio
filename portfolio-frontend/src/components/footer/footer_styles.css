@@ -1,0 +1,21 @@
+/* FOOTER SECTION */
+
+footer {
+    height: 26vh;
+    margin: 0 1rem;
+}
+
+footer p {
+    text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+    footer {
+        height: 40vh;
+    }
+
+    footer nav {
+        height: fit-content;
+        margin-bottom: 2rem;
+    }
+}

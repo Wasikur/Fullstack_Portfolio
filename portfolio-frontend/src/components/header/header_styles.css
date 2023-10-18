@@ -1,0 +1,21 @@
+/* DESKTOP NAV */
+
+.hero {
+    background: var(--primary-color);
+    padding-top: 10px;
+}
+
+nav {
+    display: flex;
+}
+
+nav {
+    justify-content: space-around;
+    align-items: center;
+    height: 17vh;
+}
+
+#toggle_icon {
+    width: 30px;
+    cursor: pointer;
+}
