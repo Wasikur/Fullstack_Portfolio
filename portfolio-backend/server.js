@@ -1,60 +1,41 @@
 import express from "express";
-import mongoose from "mongoose";
+import mysql from "mysql";
 import cors from "cors";
 
 const app = express();
 const port = 5000;
 
+// Enable CORS to allow requests from your React.js app
 app.use(cors());
 
-// Establishing connection with database
-mongoose
-  .connect(
-    "mongodb+srv://rwasikur:rwasikur@portfolio-projects.pin2t9j.mongodb.net/projects?retryWrites=true&w=majority",
-    {
-      useNewUrlParser: true,
-      useUnifiedTopology: true,
-    }
-  )
-  .then(() => {
-    console.log("Connected to MongoDB");
-  })
-  .catch((error) => {
-    console.error("Error connecting to MongoDB:", error);
-  });
-
-// Defining Schema
-const projectSchema = new mongoose.Schema({
-  key: Number,
-  img: String,
-  alt: String,
-  title: String,
+const pool = mysql.createPool({
+  connectionLimit: 10,
+  host: "localhost",
+  user: "root1",
+  password: "",
+  database: "projects",
 });
 
-// Mongoose Model
-const Projectmodel = new mongoose.model("projectcarddetails", projectSchema);
+// Create an API endpoint to retrieve data from the database
+app.get("/", (req, res) => {
+  pool.getConnection((err, connection) => {
+    if (err) {
+      return res
+        .status(500)
+        .json({ error: "Error connecting to the database" });
+    }
 
-const getDocument = async () => {
-  try {
-    const output = await Projectmodel.find();
-    console.log(output);
-  } catch (error) {
-    console.error("Error: ", error);
-  }
-};
-
-getDocument();
-
-app.get("/", async (req, res) => {
-  try {
-    const data = await Projectmodel.find();
-    res.json(data);
-  } catch (error) {
-    console.error("Error while fetching data:", error);
-    res.status(500).json({ error: "Internal server error" });
-  }
+    const query = "SELECT * FROM projectcarddetails";
+    connection.query(query, (err, rows) => {
+      connection.release(); // Release the connection when done
+      if (err) {
+        return res.status(500).json({ error: "Error querying the database" });
+      }
+      res.json(rows);
+    });
+  });
 });
 
 app.listen(port, () => {
-  console.log(`Server is running in port: ${port}`);
+  console.log(`Server is running on port ${port}`);
 });
