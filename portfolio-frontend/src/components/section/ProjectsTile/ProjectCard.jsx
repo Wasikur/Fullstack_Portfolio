@@ -2,6 +2,7 @@ import React from "react";
 
 const ProjectCard = (props) => {
   const openExternalLink = (url) => {
+    console.log("Opening external link:", url);
     window.open(url);
   };
 
