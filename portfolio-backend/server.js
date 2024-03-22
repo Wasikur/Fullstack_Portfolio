@@ -29,6 +29,8 @@ const projectSchema = new mongoose.Schema({
   img: String,
   alt: String,
   title: String,
+  githubLink: String,
+  demoLink: String,
 });
 
 // Mongoose Model
@@ -47,7 +49,7 @@ getDocument();
 
 app.get("/", async (req, res) => {
   try {
-    const data = await Projectmodel.find();
+    const data = await Projectmodel.find({}, { _id: 1, img: 1, alt: 1, title: 1, githubLink: 1, demoLink: 1 });
     res.json(data);
   } catch (error) {
     console.error("Error while fetching data:", error);
