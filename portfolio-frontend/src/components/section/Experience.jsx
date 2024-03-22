@@ -2,7 +2,7 @@ import React from "./experience_styles.css";
 import {
   frontend,
   backend,
-  python,
+  database,
 } from "./ExperienceTile/experienceCardDetails";
 import ExperienceCard from "./ExperienceTile/ExperienceCard";
 import Arrow from "../assets/arrow.png";
@@ -38,8 +38,8 @@ const Experience = () => {
             {backend.map(createCard)}
           </div>
           <div className="details-container">
-            <h2 className="experience-sub-title">Python Development</h2>
-            {python.map(createCard)}
+            <h2 className="experience-sub-title">Database Management</h2>
+            {database.map(createCard)}
           </div>
         </div>
       </div>
