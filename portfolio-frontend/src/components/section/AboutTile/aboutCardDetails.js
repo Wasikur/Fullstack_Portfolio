@@ -4,7 +4,7 @@ const about = [
     icon: "fa-solid fa-envelopes-bulk fa-xl",
     title: "Experience",
     details1: "2+ years",
-    details2: "Frontend Development",
+    details2: "Fullstack Development",
     details3: "Python Development",
   },
   {
