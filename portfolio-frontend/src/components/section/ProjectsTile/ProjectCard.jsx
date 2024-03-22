@@ -14,7 +14,7 @@ const ProjectCard = (props) => {
       <div className="btn-container">
         <button
           className="btn btn-color-2 project-btn"
-          onClick={() => openExternalLink(props.codelink)}
+          onClick={() => openExternalLink(props.githubLink)}
         >
           GitHub
         </button>
