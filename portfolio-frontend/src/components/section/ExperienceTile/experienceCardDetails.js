@@ -33,13 +33,8 @@ const backend = [
   },
    {
     id: 2,
-    skill: "Node JS",
-    experience: "Intermediate",
-  },
-  {
-    id: 3,
     skill: "Express.js",
-    experience: "Experienced",
+    experience: "Intermediate",
   },
 ];
 const python = [
