@@ -34,6 +34,8 @@ const Projects = () => {
         img={project.img}
         alt={project.alt}
         title={project.title}
+        githubLink={project.githubLink}
+        demoLink={project.demoLink}
       />
     );
   }
