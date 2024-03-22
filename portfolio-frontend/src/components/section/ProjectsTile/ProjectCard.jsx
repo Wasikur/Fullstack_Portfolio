@@ -21,7 +21,7 @@ const ProjectCard = (props) => {
         </button>
         <button
           className="btn btn-color-2 project-btn"
-          onClick={() => openExternalLink(props.demolink)}
+          onClick={() => openExternalLink(props.demoLink)}
         >
           Live Demo
         </button>
