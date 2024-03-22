@@ -18,7 +18,7 @@ const Profile = () => {
       <div className="section__text">
         <p className="section__text__p1">Hello, I'm</p>
         <h1 className="title">Wasikur Rahman Khan</h1>
-        <p className="section__text__p2">MERN fullstack developer</p>
+        <p className="section__text__p2">MERN full-stack developer</p>
         <div className="btn-container">
           <a
             href="https://drive.google.com/file/d/16CrRZvxzfYF9BYp4pBT5-g0d3rsBVAh0/view?usp=sharing"
