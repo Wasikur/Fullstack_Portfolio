@@ -14,6 +14,16 @@ const frontend = [
     skill: "Javascript",
     experience: "Intermediate",
   },
+    {
+    id: 4,
+    skill: "React.js",
+    experience: "Intermediate",
+  },
+     {
+    id: 5,
+    skill: "Next.js",
+    experience: "Intermediate",
+  },
 ];
 const backend = [
   {
@@ -21,9 +31,14 @@ const backend = [
     skill: "Node JS",
     experience: "Intermediate",
   },
-  {
+   {
     id: 2,
-    skill: "Git",
+    skill: "Node JS",
+    experience: "Intermediate",
+  },
+  {
+    id: 3,
+    skill: "Express.js",
     experience: "Experienced",
   },
 ];
