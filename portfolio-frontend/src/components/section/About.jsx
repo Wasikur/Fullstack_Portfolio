@@ -31,7 +31,7 @@ return (
                     Enthusiastic FullStack Web Developer | MERN Stack Expert | ECE Fresher with Strong Python & Database
                     Skills
                 </p>
-              </br>
+              <br>
                 <p>
                     As a passionate and highly motivated FullStack Web Developer, I bring a unique blend of expertise in
                     both web development and Electronics and Communication Engineering (ECE). Proficient in MERN stack
