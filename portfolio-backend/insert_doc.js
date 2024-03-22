@@ -6,18 +6,24 @@ const createDocument = async () => {
       img: "../assets/project1.jpg",
       alt: "project1",
       title: "Project One",
+      githubLink: "",
+      demoLink:"",
     });
     const pj2 = new Projectmodel({
       key: 2,
       img: "../assets/project2.jpg",
       alt: "project2",
       title: "Project Two",
+      githubLink: "",
+      demoLink:"",
     });
     const pj3 = new Projectmodel({
       key: 3,
       img: "../assets/project3.jpg",
       alt: "project3",
       title: "Project Three",
+      githubLink: "",
+      demoLink:"",
     });
 
     const result = await Projectmodel.insertMany([pj1, pj2, pj3]);
