@@ -37,17 +37,17 @@ const backend = [
     experience: "Intermediate",
   },
 ];
-const python = [
+const database = [
   {
     id: 1,
-    skill: "Machine Learning",
-    experience: "Basics",
+    skill: "MySQL",
+    experience: "Intermediate",
   },
   {
     id: 2,
-    skill: "Big Data Analysis",
-    experience: "Basics",
+    skill: "MongoDB",
+    experience: "Intermediate",
   },
 ];
 
-export { frontend, backend, python };
+export { frontend, backend, database };
