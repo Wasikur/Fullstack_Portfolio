@@ -21,7 +21,7 @@ const Profile = () => {
         <p className="section__text__p2">MERN full-stack developer</p>
         <div className="btn-container">
           <a
-            href="https://drive.google.com/file/d/16CrRZvxzfYF9BYp4pBT5-g0d3rsBVAh0/view?usp=sharing"
+            href="https://drive.google.com/file/d/1wuG4eI_qMwYF3t9ljlFgqm5LSTBCNcfF/view?usp=sharing"
             target="_blank"
             rel="noopener noreferrer"
             download="Wasikur_Rahman_Khan_CV.pdf"
